@@ -1,0 +1,5 @@
+random_forest_reg = DecisionTreeClassifier()
+random_forest_reg.fit(housing_prepared,housing_lables) 
+random_forest_preds = lin_reg.predict(housing_prepared)
+random_forest_rmse = root_mean_squared_error(housing_lables,random_forest_preds) 
+print(f"The root mean squared error for DecisionTreeClassifier is {random_forest_rmse}")
